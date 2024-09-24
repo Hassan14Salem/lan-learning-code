@@ -1,0 +1,95 @@
+li
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 30px;
+    text-align: center;
+    width: 40%;
+    padding: 5px 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 20px;
+}
+.trueAnswer
+{
+    background-color: green !important;
+    color: white !important;
+}
+.falseAnswer
+{
+    background-color: red !important;
+    color: white !important;
+}
+li:hover {
+    background-color: rgb(90, 89, 89);
+    color: #fff;
+    border-color: rgb(90, 89, 89);
+}
+
+.score {
+    color: rgb(70, 65, 65);
+    font-size: 35px;
+}
+
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: relative;
+    animation: rotate 1s linear infinite
+  }
+  .loader::before , .loader::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    inset: 0px;
+    border-radius: 50%;
+    border: 5px solid #FFF;
+    animation: prixClipFix 2s linear infinite ;
+  }
+  .loader::after{
+    border-color: #FF3D00;
+    animation: prixClipFix 2s linear infinite , rotate 0.5s linear infinite reverse;
+    inset: 6px;
+  }
+  .layer
+  {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #263038 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes rotate {
+    0%   {transform: rotate(0deg)}
+    100%   {transform: rotate(360deg)}
+  }
+
+  @keyframes prixClipFix {
+      0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+      25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+      50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+      75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+      100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+  }
+  .timer
+  {
+    width: fit-content;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #198754;
+  }
+  
+  .warning
+  {
+    background-color: #FF3D00 !important;
+  }

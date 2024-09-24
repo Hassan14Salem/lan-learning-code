@@ -1,0 +1,26 @@
+
+
+<section class="vh-100 d-flex justify-content-center align-items-center">
+  <div>
+    <ng-template #noresults>
+        <h2 class="text-center text-white">No Results To Show</h2>
+        <a routerLink="/home" class="btn btn-success">
+            Go To Home
+        </a>
+    </ng-template>
+   <ng-container *ngIf="score !==0 && numberOfQuestion !==0 else noresults" >
+    <h2 class="text-center text-white">Quiz Complete!</h2>
+    <div class="text-center  py-3">
+      <span class="score text-white ">Final Score : {{ score }} </span>
+      <div class="py-3">
+        <span class="score text-white">From : {{ numberOfQuestion }} </span>
+      </div>
+      <div class="my-3">
+          <a routerLink="/home" class="btn btn-success">
+              Go To Home
+          </a>
+        </div>
+    </div>
+   </ng-container>
+  </div>
+</section>

@@ -1,0 +1,16 @@
+<section class="vh-100 w-100 d-flex justify-content-center align-items-center">
+<div>
+    <h1 class="py-3 text-white">Welcome To Our Website</h1>
+    <h3 class="py-3 text-white">Please Select Your Favourite Language </h3>
+    <select name="languages" id="languages" class="form-control" (change)="getLan($event)"> 
+        <option value="">Select Language</option>
+
+        <option value="arabic">Arabic</option>
+        <option value="english">English</option>
+        <option value="french">French</option>
+
+
+    </select>
+    <button class="form-control my-3 btn btn-primary" [routerLink]="['/quiz',selectedLanguage]" [disabled]="selectedLanguage === ''">Go To Exam</button>
+</div>
+</section>

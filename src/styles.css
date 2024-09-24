@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+body
+{
+    background-color: #020B33;
+    background-image: url(../src/assets/images/BodyBg.svg);
+}
+
+
+@media screen and (max-width:400px) {
+    li {
+        width: 100% !important;
+    }
+    
+}

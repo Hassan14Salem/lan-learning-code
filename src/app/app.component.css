@@ -1,0 +1,5 @@
+.router-container {
+    position: relative;
+    overflow: hidden; /* Prevents overflow of animations */
+  }
+  

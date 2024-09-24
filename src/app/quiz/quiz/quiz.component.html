@@ -1,0 +1,58 @@
+<section class="vh-100 d-flex justify-content-center align-items-center">
+     
+  
+      <div class="w-100" *ngIf="questions.length !== 0  ">
+        <div class="timer"  [ngClass]="{'warning': timeLeft < 20}">Time left: {{ timeLeft }} seconds</div>
+
+        <div class="col-12 bg-white position-relative" *ngIf="currentQuestionIndex < questions.length">
+          <div class="layer" *ngIf="flag"><span class="loader"></span> </div>
+
+          <div>
+            <h2 class="mx-2 text-center py-3">{{ questions[currentQuestionIndex].question }}</h2>
+          </div>
+    
+          <div class="p-4">
+            <ul class="list-unstyled my-answers d-flex justify-content-center flex-wrap gap-2">
+          
+              <li (click)="getScore($event)" *ngFor="let answer of questions[currentQuestionIndex].options">
+                {{answer }}
+              </li>
+    
+           
+            </ul>
+          </div>
+    
+          <div class="text-center py-3">
+            <span class="score">Score : {{ score }}</span>
+          </div>
+        </div>
+
+        <div class="py-3 text-center">
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#resetModal">Reset The Quiz</button>
+        </div>
+    
+      </div>
+
+
+</section>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="resetModal" tabindex="-1" aria-labelledby="resetModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="resetModalLabel">Confirm Reset</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Are you sure you want to reset the quiz?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" (click)="resetQuiz()" data-bs-dismiss="modal">Reset</button>
+      </div>
+    </div>
+  </div>
+</div>

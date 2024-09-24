@@ -1,0 +1,99 @@
+{
+  "english": [
+    {
+      "id": 1,
+      "question": "What is the capital of France?",
+      "options": ["Paris", "London", "Berlin", "Rome"],
+      "answer": "Paris"
+    },
+    {
+      "id": 2,
+      "question": "Who wrote 'Hamlet'?",
+      "options": ["Shakespeare", "Homer", "Dante", "Tolstoy"],
+      "answer": "Shakespeare"
+    },
+    {
+      "id": 3,
+      "question": "What is the largest planet in our solar system?",
+      "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+      "answer": "Jupiter"
+    },
+    {
+      "id": 4,
+      "question": "Which element has the chemical symbol 'O'?",
+      "options": ["Oxygen", "Osmium", "Ozone", "Obsidian"],
+      "answer": "Oxygen"
+    },
+    {
+      "id": 5,
+      "question": "What is the tallest mountain in the world?",
+      "options": ["K2", "Kangchenjunga", "Everest", "Denali"],
+      "answer": "Everest"
+    }
+  ],
+  "arabic": [
+    {
+      "id": 1,
+      "question": "ما هي عاصمة فرنسا؟",
+      "options": ["باريس", "لندن", "برلين", "روما"],
+      "answer": "باريس"
+    },
+    {
+      "id": 2,
+      "question": "من كتب 'هاملت'؟",
+      "options": ["شكسبير", "هوميروس", "دانتي", "تولستوي"],
+      "answer": "شكسبير"
+    },
+    {
+      "id": 3,
+      "question": "ما هو أكبر كوكب في المجموعة الشمسية؟",
+      "options": ["الأرض", "المريخ", "المشتري", "زحل"],
+      "answer": "المشتري"
+    },
+    {
+      "id": 4,
+      "question": "ما العنصر الذي يحمل الرمز الكيميائي 'O'؟",
+      "options": ["الأكسجين", "الأوزميوم", "الأوزون", "الأوبسيديان"],
+      "answer": "الأكسجين"
+    },
+    {
+      "id": 5,
+      "question": "ما هو أعلى جبل في العالم؟",
+      "options": ["K2", "كانغشينجونغا", "إيفرست", "دينالي"],
+      "answer": "إيفرست"
+    }
+    
+  ],
+  "french": [
+    {
+      "id": 1,
+      "question": "Quelle est la capitale de la France ?",
+      "options": ["Paris", "Londres", "Berlin", "Rome"],
+      "answer": "Paris"
+    },
+    {
+      "id": 2,
+      "question": "Qui a écrit 'Hamlet' ?",
+      "options": ["Shakespeare", "Homer", "Dante", "Tolstoï"],
+      "answer": "Shakespeare"
+    },
+    {
+      "id": 3,
+      "question": "Quelle est la plus grande planète de notre système solaire ?",
+      "options": ["Terre", "Mars", "Jupiter", "Saturne"],
+      "answer": "Jupiter"
+    },
+    {
+      "id": 4,
+      "question": "Quel élément a le symbole chimique 'O' ?",
+      "options": ["Oxygène", "Osmium", "Ozone", "Obsidienne"],
+      "answer": "Oxygène"
+    },
+    {
+      "id": 5,
+      "question": "Quelle est la plus haute montagne du monde ?",
+      "options": ["K2", "Kangchenjunga", "Everest", "Denali"],
+      "answer": "Everest"
+    }
+  ]
+}
